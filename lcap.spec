@@ -5,22 +5,6 @@ Version:	0.0.6
 Release:	3
 License:	GPL
 Group:		Base
-Group(cs):	Z·klad
-Group(da):	Basal
-Group(de):	Basis
-Group(es):	Base
-Group(fr):	Base
-Group(is):	Grunnforrit
-Group(it):	Base
-Group(ja):	•Ÿ°º•π
-Group(no):	Basis
-Group(pl):	Podstawowe
-Group(pt):	Base
-Group(pt_BR):	Base
-Group(ru):	‚¡⁄¡
-Group(sl):	Osnova
-Group(sv):	Bas
-Group(uk):	‚¡⁄¡
 Source0:	http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
 URL:		http://pweb.netcom.com/~spoon/lcap/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
