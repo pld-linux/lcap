@@ -6,15 +6,15 @@ License:	GPL
 Release:	2
 Group:		Base
 Group(pl):	Podstawowe
-Source:		http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
+Source0:	http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
 URL:		http://pweb.netcom.com/~spoon/lcap/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sbindir	/sbin
 
 %description
-Removes "capabilities" in the kernel making the operating system
-more secure.
+Removes "capabilities" in the kernel making the operating system more
+secure.
 
 %description -l pl
 Usuwa "capabilities" z kernela, czyni±c system operacyjny bardziej
