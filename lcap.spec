@@ -8,7 +8,7 @@ Source:		http://pweb.netcom.com/~spoon/%{name}-%{version}.tar.bz2
 URL:		http://pweb.netcom.com/~spoon/lcap.html
 BuildRoot:	/tmp/%{name}-%{version}-root
 
-%define		_sbibdir	/sbin
+%define		_sbindir	/sbin
 
 %description
 Removes "capabilities" in the kernel making the operating system
@@ -18,7 +18,7 @@ more secure.
 %setup -q
 
 %build
-make
+make CFLAGS="$RPM_OPT_FLAGS -Wall -DVERSION=%{version}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
