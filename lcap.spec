@@ -5,7 +5,7 @@ Version:	0.0.3
 License:	GPL
 Release:	2
 Group:		Base
-Group(pl):	Bazowe
+Group(pl):	Podstawowe
 Source:		http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
 URL:		http://pweb.netcom.com/~spoon/lcap/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
