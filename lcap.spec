@@ -1,6 +1,6 @@
 Summary:	Linux Capability Remover
 Name:		lcap
-Version:	0.0.2
+Version:	0.0.3
 License:	GPL
 Release:	1
 Group:		Base
