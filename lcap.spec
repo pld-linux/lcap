@@ -1,11 +1,14 @@
-Summary: Linux Capability Remover
-Name: lcap
-Version: 0.0.1
-Copyright: GPL
-Release: 1
-Group: System Environment/Base
-Source: %{name}-%{version}.tar.bz2
-BuildRoot: /var/tmp/%{name}-root
+Summary:	Linux Capability Remover
+Name:		lcap
+Version:	0.0.1
+License:	GPL
+Release:	1
+Group:		Base
+Source:		http://pweb.netcom.com/~spoon/%{name}-%{version}.tar.bz2
+URL:		http://pweb.netcom.com/~spoon/lcap.html
+BuildRoot:	/tmp/%{name}-%{version}-root
+
+%define		_sbibdir	/sbin
 
 %description
 Removes "capabilities" in the kernel making the operating system
@@ -18,18 +21,15 @@ more secure.
 make
 
 %install
+rm -rf $RPM_BUILD_ROOT
 make install prefix=$RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}
-cp COPYING README $RPM_BUILD_ROOT/usr/doc/%{name}-%{version}
+
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
-%doc /usr/doc/*
-/sbin/lcap
-
-%changelog
-* Fri Dec 10 1999 spoon <spoon@ix.netcom.com>
-- created spec
+%defattr(644,root,root,755)
+%doc *.gz
+%attr(755,root,root) %{_sbindir}/lcap
