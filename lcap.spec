@@ -8,7 +8,7 @@ Group:		Base
 Group(pl):	Bazowe
 Source:		http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
 URL:		http://pweb.netcom.com/~spoon/lcap/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sbindir	/sbin
 
