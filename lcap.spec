@@ -33,7 +33,8 @@ Este utilitário permite que se altere as capabilities do kernel.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install prefix=$RPM_BUILD_ROOT
+%{__make} install \
+	prefix=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_mandir}/man8
 install lcap.8 $RPM_BUILD_ROOT%{_mandir}/man8
@@ -45,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_sbindir}/lcap
-%{_mandir}/man8/*
+%{_mandir}/man?/*
