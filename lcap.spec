@@ -5,9 +5,10 @@ Version:	0.0.6
 Release:	3
 License:	GPL
 Group:		Base
-Source0:	http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
-# Source0-md5:	b96802b10f616dd42389fc9edfa85395
-URL:		http://pweb.netcom.com/~spoon/lcap/
+#Source0:	http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
+# Source0-md5:	3d6e7c160960b1621a6664c143757244
+#URL:		http://pweb.netcom.com/~spoon/lcap/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sbindir	/sbin
