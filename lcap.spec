@@ -1,9 +1,11 @@
 Summary:	Linux Capability Remover
+Summary(pl):	Program do usuwania "capabilities" w kernelu
 Name:		lcap
 Version:	0.0.3
 License:	GPL
 Release:	1
 Group:		Base
+Group(pl):	Bazowe
 Source:		http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
 URL:		http://pweb.netcom.com/~spoon/lcap/
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -13,6 +15,10 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 %description
 Removes "capabilities" in the kernel making the operating system
 more secure.
+
+%description -l pl
+Usuwa "capabilities" z kernela, czyni±c system operacyjny bardziej
+bezpiecznym.
 
 %prep
 %setup -q
