@@ -3,7 +3,7 @@ Summary(pl):	Program do usuwania "capabilities" w kernelu
 Name:		lcap
 Version:	0.0.3
 License:	GPL
-Release:	1
+Release:	2
 Group:		Base
 Group(pl):	Bazowe
 Source:		http://pweb.netcom.com/~spoon/lcap/download/%{name}-%{version}.tar.bz2
