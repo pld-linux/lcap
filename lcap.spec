@@ -24,11 +24,11 @@ bezpiecznym.
 %setup -q
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS -Wall -DVERSION=%{version}"
+%{__make} CFLAGS="$RPM_OPT_FLAGS -Wall -DVERSION=%{version}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install prefix=$RPM_BUILD_ROOT
+%{__make} install prefix=$RPM_BUILD_ROOT
 
 gzip -9nf README
 
